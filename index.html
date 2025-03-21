@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Recommendation System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Crop Recommendation System</h1>
+    <p>Enter your location and climate conditions to get crop recommendations.</p>
+
+    <form id="cropForm">
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" placeholder="Enter your location" required>
+
+      <label for="climate">Climate Type:</label>
+      <select id="climate" name="climate">
+        <option value="tropical">Tropical</option>
+        <option value="temperate">Temperate</option>
+        <option value="arid">Arid</option>
+      </select>
+
+      <label for="soilType">Soil Type:</label>
+      <select id="soilType" name="soilType">
+        <option value="loamy">Loamy</option>
+        <option value="sandy">Sandy</option>
+        <option value="clay">Clay</option>
+      </select>
+
+      <button type="submit">Get Recommendations</button>
+    </form>
+
+    <div id="recommendations" class="results">
+      <h2>Recommended Crops:</h2>
+      <ul id="cropList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
